@@ -2869,6 +2869,12 @@ G = Parameter(name = 'G',
               value = '2*cmath.sqrt(aS)*cmath.sqrt(cmath.pi)',
               texname = 'G')
 
+Gstrong = Parameter(name = 'Gstrong',
+              nature = 'internal',
+              type = 'real',
+              value = 'G' if configuration.norm_chromo_gs else '1.',
+              texname = '\\text{Gstrong}')
+
 sth2 = Parameter(name = 'sth2',
                  nature = 'internal',
                  type = 'real',
